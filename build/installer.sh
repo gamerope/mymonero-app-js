@@ -1,10 +1,10 @@
 !macro customInstall
-  DetailPrint "Register monero URI Handler"
-  DeleteRegKey HKCR "monero"
-  WriteRegStr HKCR "monero" "" "URL:monero"
-  WriteRegStr HKCR "monero" "URL Protocol" ""
-  WriteRegStr HKCR "monero\DefaultIcon" "" "$INSTDIR\${APP_EXECUTABLE_FILENAME}"
-  WriteRegStr HKCR "monero\shell" "" ""
-  WriteRegStr HKCR "monero\shell\Open" "" ""
-  WriteRegStr HKCR "monero\shell\Open\command" "" "$INSTDIR\${APP_EXECUTABLE_FILENAME} %1"
+  DetailPrint "Register lozzax URI Handler"
+  DeleteRegKey HKCR "lozzax"
+  WriteRegStr HKCR "lozzax" "" "URL:lozzax"
+  WriteRegStr HKCR "lozzax" "URL Protocol" ""
+  WriteRegStr HKCR "lozzax\DefaultIcon" "" "$INSTDIR\${APP_EXECUTABLE_FILENAME}"
+  WriteRegStr HKCR "lozzax\shell" "" ""
+  WriteRegStr HKCR "lozzax\shell\Open" "" ""
+  WriteRegStr HKCR "lozzax\shell\Open\command" "" "$INSTDIR\${APP_EXECUTABLE_FILENAME} %1"
 !macroend
